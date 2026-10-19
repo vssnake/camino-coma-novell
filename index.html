@@ -349,7 +349,7 @@ glos.addEventListener('click',e=>{if(e.target===glos)glos.close()});
 const pulsarGlos=e=>{const b=e.target.closest&&e.target.closest('[data-g]');if(b){abrirGlos(b.dataset.g);e.preventDefault()}};
 $('#cam').addEventListener('click',pulsarGlos);
 $('#cam').addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('.gi'))pulsarGlos(e)});
-let detalle=TODO_?leerE('detalle')!=='0':false;
+let detalle=leerE('detalle')!=='0';  // abierto por defecto en las dos vistas
 const graf=$('#cam-graf'), ficha=$('#cam-ficha'), secc=$('#cam-sec'), cuerpo=$('#cam-cuerpo'), boton=$('#cam-boton');
 $('#cam-ayuda').textContent=(tactil?'Arrastra el dedo por la gráfica o mueve el punto azul del mapa.':'Pasa el ratón por la gráfica o arrastra el punto azul del mapa.')+' Izquierda y derecha, mirando hacia la casa.';
 $('#cam-ayuda2').innerHTML=(tactil?'Arrastra el dedo por la gráfica':'Pasa el ratón por la gráfica')+' o mueve el punto azul del mapa. '+
