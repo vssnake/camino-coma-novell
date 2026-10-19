@@ -87,6 +87,7 @@ path.leaflet-interactive:focus{outline:none}
 #cam-sec figcaption{font-size:12px;color:var(--muted);line-height:1.45;font-variant-numeric:tabular-nums}
 #cam-sec figcaption div{height:1.45em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #cam-sec figure{margin:0}
+#cam-sec{margin:8px 0 0;min-width:0}
 .cam-ley{font-size:12.5px;color:var(--muted);line-height:1.75;grid-column:1/-1}
 .cam-ley i{display:inline-block;width:10px;height:10px;border-radius:2px;margin:0 3px 0 8px;vertical-align:-1px}
 .cam-ley i:first-child{margin-left:0}
@@ -158,9 +159,9 @@ body.lateral #cam-capas[hidden],body.lateral #cam.plegado #cam-capas,body.latera
 <div id="cam-cuerpo" role="tabpanel" aria-labelledby="pest-perfil">
 <p id="cam-ayuda2"></p>
 <div id="cam-graf"></div>
+<figure id="cam-sec" hidden></figure>
 <div id="cam-lado"><div id="cam-ficha" aria-live="polite"></div>
-<button type="button" id="cam-detalle-btn" aria-expanded="false" aria-controls="cam-sec">Ver detalle técnico ▸</button>
-<figure id="cam-sec" hidden></figure></div>
+<button type="button" id="cam-detalle-btn" aria-expanded="false" aria-controls="cam-sec">Ver detalle técnico ▸</button></div>
 </div>
 <div id="cam-capas" role="tabpanel" aria-labelledby="pest-capas" hidden></div>
 <dialog id="glosario" aria-labelledby="glos-tit"><div class="gcab"><b id="glos-tit">Qué significan los datos</b><button type="button" id="glos-cerrar">Cerrar</button></div><dl id="glos-lista"></dl></dialog>
