@@ -263,8 +263,8 @@ const DEF=[
 ];
 const hidro=img('hidrografia'), pendiente=L.imageOverlay(CAPAS.pendiente.archivo,CAPAS.pendiente.bounds,{opacity:.85});
 const over=TODO?{'Hidrografía ICGC':hidro,'Márgenes y taludes ICGC':img('margenes'),'Pendiente del terreno (LiDAR)':pendiente}
-               :{'Barranco':hidro,'Pendiente del terreno':pendiente};
-const N_ESP=TODO?'Ancho disponible a cada lado':'Espacio libre a cada lado del camino', N_PEND=TODO?'Pendiente del terreno (LiDAR)':'Pendiente del terreno';
+               :{'Barranco':hidro,'Márgenes y taludes':img('margenes'),'Pendiente del terreno (LiDAR)':pendiente};
+const N_ESP=TODO?'Ancho disponible a cada lado':'Espacio libre a cada lado del camino', N_PEND='Pendiente del terreno (LiDAR)';
 hidro.addTo(m);
 const CAP={};
 for(const [tipos,nTodo,nAyto,enc] of DEF){const n=TODO?nTodo:nAyto;if(!n)continue;
